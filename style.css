@@ -551,6 +551,41 @@ body {
 
 .planos__footer { font-size: 15px; margin-top: 16px; }
 
+/* ── POLIMENTO ── */
+.card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(52, 167, 64, 0.12);
+}
+
+.passo-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.passo-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(52, 167, 64, 0.08);
+}
+
+.benefit {
+  transition: box-shadow 0.2s ease;
+}
+.benefit:hover {
+  box-shadow: 0 4px 16px rgba(52, 167, 64, 0.08);
+}
+
+/* Fade-in ao scroll */
+.fade-in {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* ── RESPONSIVIDADE ── */
 @media (max-width: 900px) {
   .hero { padding: 40px 24px 0; margin: 16px; min-height: auto; }
