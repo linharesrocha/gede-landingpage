@@ -550,3 +550,63 @@ body {
 .planos__cta { text-align: center; margin-top: 40px; }
 
 .planos__footer { font-size: 15px; margin-top: 16px; }
+
+/* ── RESPONSIVIDADE ── */
+@media (max-width: 900px) {
+  .hero { padding: 40px 24px 0; margin: 16px; min-height: auto; }
+  .hero__content { flex-direction: column; }
+  .hero__left { flex: none; }
+  .hero__mockups { display: none; }
+  .hero__headline { font-size: 38px; }
+
+  .section { margin: 8px 12px; }
+  .section__inner { padding: 40px 24px 0; }
+  .section--tagline { margin: 0 12px; }
+
+  .marca__header { flex-direction: column; gap: 16px; }
+  .marca__header-right { flex: none; }
+  .cards { grid-template-columns: 1fr; margin: 0 -24px; padding: 24px 24px 0; }
+
+  .porque__header { flex-direction: column; gap: 16px; }
+  .porque__subtitle { flex: none; }
+  .benefit { padding: 28px 24px; flex-direction: column; }
+  .benefit__title { font-size: 20px; }
+  .benefit__stat { font-size: 20px; }
+
+  .tagline__inner { padding: 40px 24px; flex-direction: column; text-align: center; }
+  .tagline__line1 { font-size: 30px; }
+  .tagline__line2 { font-size: 22px; }
+  .tagline__emoji { font-size: 48px; }
+
+  .passos__cards { grid-template-columns: 1fr 1fr; }
+  .section__inner--passos { padding: 40px 24px 0; }
+  .passos__banner { padding: 28px 24px; }
+  .passos__banner-text { font-size: 24px; }
+
+  .plan-card { flex-direction: column; gap: 32px; padding: 32px 24px; }
+  .plan-card__left { flex: none; }
+  .plan-features { grid-template-columns: 1fr; }
+  .section__inner--planos { padding: 40px 24px; }
+
+  .navbar__links { display: none; }
+  .navbar__hamburger { display: block; }
+  .navbar__inner { flex-wrap: wrap; }
+  .navbar__links.open {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+    padding: 16px 0;
+    border-top: 1px solid var(--border);
+  }
+
+  .heading-lg { font-size: 36px; }
+}
+
+@media (max-width: 480px) {
+  .passos__cards { grid-template-columns: 1fr; }
+  .hero__cta-group { flex-direction: column; }
+  .passos__banner-text { font-size: 18px; }
+  .tagline__line1 { font-size: 24px; }
+  .tagline__line2 { font-size: 18px; }
+}
