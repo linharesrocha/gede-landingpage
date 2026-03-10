@@ -371,3 +371,79 @@ body {
   line-height: 1;
   flex-shrink: 0;
 }
+
+/* ── PASSOS ── */
+.section--passos {
+  background: linear-gradient(135deg, #fff 50%, var(--green-light) 100%);
+}
+
+.section__inner--passos { padding-bottom: 0; }
+
+.passos__header { text-align: center; margin-bottom: 48px; }
+.passos__sub { margin-top: 8px; font-size: 18px; }
+
+.passos__cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.passo-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  padding: 32px;
+  min-height: 280px;
+}
+
+.passo-card__num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--green-icon);
+  border-radius: 16px;
+  width: 56px;
+  height: 56px;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--green);
+  margin-bottom: 32px;
+}
+
+.passo-card__title {
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--green-dark);
+  line-height: 1.4;
+  margin-bottom: 12px;
+}
+
+.passo-card__desc {
+  font-size: 16px;
+  color: var(--text-grey);
+  line-height: 1.5;
+}
+
+.passos__banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  background: linear-gradient(160deg, #fff 50%, var(--green-light) 100%);
+  border-top: 1px solid var(--border);
+  padding: 40px 60px;
+  margin-top: 16px;
+}
+
+.passos__banner-text {
+  font-size: 36px;
+  font-weight: 500;
+  color: var(--green-dark);
+}
+
+.passos__banner-text em {
+  font-style: italic;
+  color: var(--green);
+}
+
+.passos__banner-emoji { font-size: 60px; display: inline-block; transform: rotate(15deg); }
