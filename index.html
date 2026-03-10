@@ -6,6 +6,7 @@
   <title>Gedê App — Seu cliente agenda. Você só atende.</title>
   <meta name="description" content="Transforme seu agendamento em um mini-site profissional com nome, domínio próprio e visual personalizado." />
   <link rel="stylesheet" href="style.css" />
+  <script src="main.js" defer></script>
 </head>
 <body>
   <!-- NAVBAR -->
@@ -22,10 +23,11 @@
         <li><a href="#passos">Recursos</a></li>
         <li><a href="#">Sobre nós</a></li>
       </ul>
-      <a href="https://wa.me/5531963841551" target="_blank" rel="noopener" class="btn btn--green btn--sm">Log In</a>
+      <a href="https://wa.me/5531963841551" target="_blank" rel="noopener" class="btn btn--green btn--sm">Entrar</a>
       <button class="navbar__hamburger" aria-label="Menu">&#9776;</button>
     </div>
   </nav>
+  <main>
 
   <!-- HERO -->
   <section id="hero" class="hero">
@@ -40,25 +42,25 @@
         </p>
         <div class="hero__cta-group">
           <a href="https://wa.me/5531963841551" target="_blank" rel="noopener" class="btn btn--green">Comece gratuitamente</a>
-          <a href="#passos" class="btn btn--outline">▶ veja como funciona</a>
+          <a href="#passos" class="btn btn--outline"><span aria-hidden="true">▶</span> veja como funciona</a>
         </div>
         <div class="hero__tagline">
-          <span>🍉</span>
+          <span aria-hidden="true">🍉</span>
           <span>Soluções de agendamento instantâneo — <em>do seu jeito</em>.</span>
         </div>
       </div>
       <div class="hero__mockups">
         <div class="hero__mockup">
           <img src="assets/phone-body.png" alt="" class="hero__phone" />
-          <img src="assets/mockup-cliente.png" alt="App cliente" class="hero__screen" />
+          <img src="assets/mockup-cliente.png" alt="Tela de agendamento vista pelo cliente" class="hero__screen" />
         </div>
         <div class="hero__mockup">
           <img src="assets/phone-body.png" alt="" class="hero__phone" />
-          <img src="assets/mockup-admin.png" alt="App admin" class="hero__screen" />
+          <img src="assets/mockup-admin.png" alt="Painel de administração do Gedê" class="hero__screen" />
         </div>
       </div>
     </div>
   </section>
-  <script src="main.js"></script>
+  </main>
 </body>
 </html>

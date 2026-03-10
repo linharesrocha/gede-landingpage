@@ -3,7 +3,7 @@
 :root {
   --green:       #34a740;
   --green-dark:  #17381a;
-  --green-dark2: #18511e;
+  --green-forest: #18511e;
   --green-light: #e7f4e9;
   --green-pill:  rgba(52, 167, 64, 0.15);
   --green-icon:  rgba(52, 167, 64, 0.1);
@@ -146,7 +146,7 @@ body {
   align-items: center;
   gap: 8px;
   background: var(--bg);
-  border-radius: 29px;
+  border-radius: var(--radius-btn);
   padding: 10px 20px;
   font-size: 14px;
   width: fit-content;
