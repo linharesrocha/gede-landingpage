@@ -8,7 +8,57 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- seções aqui -->
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="navbar__inner">
+      <a href="#" class="navbar__logo">
+        <img src="assets/logo.png" alt="Gedê" height="36" />
+      </a>
+      <ul class="navbar__links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#marca">Funcionalidades</a></li>
+        <li><a href="#porque">Como funciona</a></li>
+        <li><a href="#planos">Preços</a></li>
+        <li><a href="#passos">Recursos</a></li>
+        <li><a href="#">Sobre nós</a></li>
+      </ul>
+      <a href="https://wa.me/5531963841551" target="_blank" rel="noopener" class="btn btn--green btn--sm">Log In</a>
+      <button class="navbar__hamburger" aria-label="Menu">&#9776;</button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero" class="hero">
+    <div class="hero__content">
+      <div class="hero__left">
+        <h1 class="hero__headline">
+          <span class="hero__headline--dark">Seu cliente agenda.</span>
+          <span class="hero__headline--green">Você só atende.</span>
+        </h1>
+        <p class="hero__subtitle">
+          Transforme seu agendamento em um mini-site profissional, com nome, domínio próprio e visual personalizado, algo que nenhum concorrente oferece.
+        </p>
+        <div class="hero__cta-group">
+          <a href="https://wa.me/5531963841551" target="_blank" rel="noopener" class="btn btn--green">Comece gratuitamente</a>
+          <a href="#passos" class="btn btn--outline">▶ veja como funciona</a>
+        </div>
+        <div class="hero__tagline">
+          <span>🍉</span>
+          <span>Soluções de agendamento instantâneo — <em>do seu jeito</em>.</span>
+        </div>
+      </div>
+      <div class="hero__mockups">
+        <div class="hero__mockup">
+          <img src="assets/phone-body.png" alt="" class="hero__phone" />
+          <img src="assets/mockup-cliente.png" alt="App cliente" class="hero__screen" />
+        </div>
+        <div class="hero__mockup">
+          <img src="assets/phone-body.png" alt="" class="hero__phone" />
+          <img src="assets/mockup-admin.png" alt="App admin" class="hero__screen" />
+        </div>
+      </div>
+    </div>
+  </section>
   <script src="main.js"></script>
 </body>
 </html>
