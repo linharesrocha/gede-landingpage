@@ -180,3 +180,87 @@ body {
   width: 88%;
   border-radius: 32px;
 }
+
+/* ── SEÇÕES BASE ── */
+.section {
+  margin: 8px 27px;
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.section__inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 60px 60px 0;
+}
+
+/* ── TIPOGRAFIA ── */
+.heading-lg {
+  font-size: 52px;
+  font-weight: 500;
+  line-height: 1.1;
+  color: var(--green-dark);
+}
+
+.text-green { color: var(--green); font-weight: 700; }
+.text-red   { color: var(--red); font-size: 28px; font-weight: 400; }
+.text-grey  { color: var(--text-grey); }
+
+/* ── MARCA ── */
+.section--marca {
+  background: linear-gradient(135deg, #fff 50%, var(--green-light) 100%);
+}
+
+.marca__header {
+  display: flex;
+  align-items: flex-start;
+  gap: 60px;
+  margin-bottom: 48px;
+}
+
+.marca__header-left { flex: 1; }
+.marca__header-right { flex: 0 0 400px; font-size: 18px; line-height: 1.6; padding-top: 16px; }
+
+/* ── CARDS ── */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  background: var(--bg);
+  border-radius: var(--radius-card) var(--radius-card) 0 0;
+  padding: 30px 30px 0;
+  margin: 0 -60px;
+}
+
+.card {
+  background: var(--white);
+  border-radius: var(--radius-card);
+  padding: 40px 40px 36px;
+  min-height: 256px;
+}
+
+.card--gradient {
+  background: linear-gradient(120deg, #fff 60%, var(--green-light) 100%);
+}
+
+.card__icon {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  margin-bottom: 48px;
+}
+
+.card__title {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--green-forest);
+  margin-bottom: 12px;
+}
+
+.card__desc {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--text-grey);
+  max-width: 260px;
+}
